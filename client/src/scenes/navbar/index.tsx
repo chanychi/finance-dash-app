@@ -26,10 +26,12 @@ const NavBar = (props: Props) => {
             onClick={() => setSelected("dashboard")}
             style={{
               color: selected === "dashboard" ? "inherit" : palette.grey[700],
-              textDecoration: "inherit",
+              fontSize: "16px",
+              textDecoration:  selected === "dashboard" ? "underline" : "inherit",
+              textDecorationThickness: selected === "dashboard" ? "2.5px" : "auto",
             }}
           >
-            dashboard
+            Dashboard
           </Link>
         </Box>
         <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
@@ -38,10 +40,12 @@ const NavBar = (props: Props) => {
             onClick={() => setSelected("predictions")}
             style={{
               color: selected === "predictions" ? "inherit" : palette.grey[700],
-              textDecoration: "inherit",
+              fontSize: "16px",
+              textDecoration: selected === "predictions" ? "underline" : "inherit",
+              textDecorationThickness: selected === "predictions" ? "2.5px" : "auto",
             }}
           >
-            predictions
+            Predictions
           </Link>
         </Box>
       </FlexBetween>
