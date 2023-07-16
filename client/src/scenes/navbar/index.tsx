@@ -13,7 +13,7 @@ const NavBar = (props: Props) => {
   return (
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
       <FlexBetween gap="0.75rem">
-        <TollIcon sx={{ fontSize: "55px" }} />
+        <TollIcon sx={{ fontSize: "35px" }} />
         <Typography variant='h4' fontSize="16px">
           Finance Admin
         </Typography>
